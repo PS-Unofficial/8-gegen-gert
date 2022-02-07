@@ -48,7 +48,8 @@ class WordTable extends React.Component {
   }
 
   buildWord = (index, word, players, type) => {
-    var colours = ['#8934B8', '#0A53DE', '#24D024', '#FBF21A', '#FB6F24', '#EA0D0D']
+    var colours = ['#703faf', '#00b0ff', '#14b37d', '#f2f27a', '#fb8b61', '#ff5f56', '#8f93a2', '#B3143E']
+/*    var colours = ['#FFF', '#FFF', '#FFF', '#FFF', '#FFF', '#FFF'] */
     var playerIndex = 1;
     if(type === "host") {
       var visibleClass = "not".repeat(1-word["visible"]) + "visible";
@@ -76,6 +77,7 @@ class WordTable extends React.Component {
                     playerIndex += 1;
                     if (player["guesses"][index]) {
                     return <p style={{'background-color':colours[playerIndex%colours.length]}} className="playerGuess">{player["name"]}</p>
+/*                    return <p style={{'color': white, className="playerGuess">{player["name"]}</p> */
                   }
                   return <p className="playerGuess"></p>
                 })} 

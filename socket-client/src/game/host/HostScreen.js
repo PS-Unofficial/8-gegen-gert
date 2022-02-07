@@ -43,6 +43,7 @@ class HostScreen extends React.Component {
         <WordTable data={{"wordList":this.state.wordList, "players":this.state.players, "type":"host"}} />
         <Score data={{"players":this.state.players, "type":"host"}}/>
       </div>
+
     );
   }
 }

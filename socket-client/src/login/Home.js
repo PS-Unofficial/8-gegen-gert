@@ -20,7 +20,7 @@ class Home extends React.Component {
   login = (event) => {
     event.preventDefault();
     if(this.state === null) {
-      alert("Cookie required. Please refresh the page");
+      alert("Cookie required. Please refresh the page or type a Username");
       return 
     }    
     if(this.state.name === undefined || this.state.name === "") {
@@ -52,7 +52,7 @@ class Home extends React.Component {
     return (
       <div style={{ textAlign: "center" }}>
         <form>
-          <label>Player name:</label>
+          <label>Player name: </label>
           <input type="text" name="name" onChange={this.handleNameChange}></input><br/>
           <input type="submit" onClick={this.login} name="host" value="Host"/>
           <input type="submit" onClick={this.login} name="player" value="Player"/>

@@ -13,7 +13,7 @@ class Score extends React.Component {
   }
     
   drawScoreBar = () => {
-    var colours = ['#8934B8', '#0A53DE', '#24D024', '#FBF21A', '#FB6F24', '#EA0D0D']
+    var colours = ['#703faf', '#00b0ff', '#14b37d', '#4369D9', '#fb8b61', '#ff5f56', '#8f93a2', '#B3143E' ]
     var players = this.props.data["players"]
     var w = (100/players.length)-1+"vw"
     var index = 1
