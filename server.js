@@ -159,13 +159,13 @@ io.on('connection', socket => {
       console.log("Clear timer")  
     }
     catch{}
-    global.time = 45
+    global.time = 60
     global.timer = setInterval(() => {
       console.log("Update timer")  
       global.time = global.time - 1;
       io.emit('update timer', global.time);
       if(global.time <= 0) {
-	global.time = 45
+	global.time = 60
 	io.emit('update timer', global.time);
         clearInterval(global.timer)
       }

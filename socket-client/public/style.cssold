@@ -7,3 +7,7 @@ body {
     color: white;
     background-color: #0b0c13;
 }
+
+.root .root .root .title h1{
+  color:#ffffff
+}

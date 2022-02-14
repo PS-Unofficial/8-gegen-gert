@@ -48,7 +48,7 @@ class WordTable extends React.Component {
   }
 
   buildWord = (index, word, players, type) => {
-    var colours = ['#703faf', '#00b0ff', '#14b37d', '#f2f27a', '#fb8b61', '#ff5f56', '#8f93a2', '#B3143E']
+    var colours = ['#703faf', '#00b0ff', '#14b37d', '#4369D9', '#fb8b61', '#F01419', '#E673B8', '#229e99' ]
 /*    var colours = ['#FFF', '#FFF', '#FFF', '#FFF', '#FFF', '#FFF'] */
     var playerIndex = 1;
     if(type === "host") {

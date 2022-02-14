@@ -44,10 +44,11 @@ class WordMenu extends React.Component {
     return (
       <div className="wordMenu">
         <form>
-          <label>New Word:</label>
+          <label>New Word: </label>
           <input type="text" name="word" onChange={this.handleWordChange}></input><br/>
           <input type="submit" onClick={this.addWord} value="Add Word"/>
         </form>
+        <br />
         <button onClick={() => this.clearWordList()}>Clear all words</button>
       </div>
     );

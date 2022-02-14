@@ -41,7 +41,7 @@ class PlayerScreen extends React.Component {
   render() {
     return (
       <div className="root">
-        <h1 className="title">Mind-Reader</h1>
+        <h1 className="title">8 gegen Gert</h1>
         <Timer data={{"type":"player"}}/>
         <WordTable data={{"wordList":this.state.wordList, "players":this.state.players, "type":"player"}} />
         <Score data={{"players":this.state.players, "type":"player"}} />
