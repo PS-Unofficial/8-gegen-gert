@@ -1,4 +1,4 @@
-FROM node:current-alpine3.15
+FROM node:16.13-bullseye-slim
 
 # Create app directory
 WORKDIR /usr/src/8-gegen-gert
@@ -19,9 +19,10 @@ RUN npm install
 WORKDIR /usr/src/8-gegen-gert
 
 # Bundle app source
-COPY ./entrypoint.sh ./
-COPY ./socket-client/ ./
-COPY ./server.js ./
+# COPY ./entrypoint.sh ./
+# COPY ./socket-client/ ./
+# COPY ./server.js ./
+COPY . .
 
 EXPOSE 3000
 COPY ./entrypoint.sh /usr/local/bin/
