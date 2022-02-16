@@ -25,5 +25,6 @@ WORKDIR /usr/src/8-gegen-gert
 COPY . .
 
 EXPOSE 3000
+EXPOSE 4001
 COPY ./entrypoint.sh /usr/local/bin/
 CMD ["sh", "entrypoint.sh" ]
